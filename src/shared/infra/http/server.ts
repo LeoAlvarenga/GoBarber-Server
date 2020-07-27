@@ -4,9 +4,10 @@ import express, { Request, Response, NextFunction } from 'express'
 //necessary to run errors on async routes
 import 'express-async-errors'
 import routes from './routes/index'
-import './database'
-import uploadConfig from './config/upload'
-import AppError from './errors/AppErrors'
+import '@shared/infra/typeorm'
+import '@shared/container'
+import uploadConfig from '@config/upload'
+import AppError from '../../errors/AppErrors'
 import cors from 'cors'
 
 const app = express()

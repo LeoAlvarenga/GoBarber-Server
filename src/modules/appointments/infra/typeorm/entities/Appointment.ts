@@ -1,5 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn } from 'typeorm'
-import User from './User'
+import User from '../../../../users/infra/typeorm/entities/User'
 
 
 // set "experimentalDecorators": true, and "emitDecoratorMetadata": true, on tsconfig.json to enable decorators
