@@ -2,6 +2,7 @@ import Appointment from "../infra/typeorm/entities/Appointment";
 import { startOfHour } from "date-fns";
 import AppError from '@shared/errors/AppErrors'
 import IAppointmentsRepository from "../repositories/IAppointmentsRepository";
+import "reflect-metadata"
 import { inject, injectable } from "tsyringe";
 
 
