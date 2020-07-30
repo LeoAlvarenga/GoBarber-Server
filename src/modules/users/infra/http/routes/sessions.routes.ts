@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import AuthenticateUserService from "@modules/users/services/AtuthenticateUserService";
+import AuthenticateUserService from "@modules/users/services/AuthenticateUserService";
 import { container } from "tsyringe";
 import SessionsController from "@modules/users/controllers/SessionsController";
 
