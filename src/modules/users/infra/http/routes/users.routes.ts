@@ -7,8 +7,8 @@ import CreateUserService from "@modules/users/services/CreateUserService";
 import ensureAuthentication from "@modules/users/infra/http/middleware/ensureAuthentication";
 import UpdateUserAvatarService from "@modules/users/services/UpdateUserAvatarService";
 import { container } from "tsyringe";
-import UsersController from "@modules/users/controllers/UsersController";
-import UserAvatarController from "@modules/users/controllers/UserAvatarController";
+import UsersController from "@modules/users/infra/http/controllers/UsersController";
+import UserAvatarController from "@modules/users/infra/http/controllers/UserAvatarController";
 
 const usersRouter = Router();
 const upload = multer(uploadConfig);
