@@ -18,11 +18,13 @@ describe("ListProviderMonthAvailability", () => {
     await fakeAppointmentsRepository.create({
       provider_id: "user",
       date: new Date(2020, 3, 20, 14, 0, 0),
+      user_id: 'user_id'
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: "user",
       date: new Date(2020, 3, 20, 16, 0, 0),
+      user_id: 'user_id'
     });
 
     jest
