@@ -1,7 +1,10 @@
 node_modules/
 .vscode/
-
+.idea/
+build/
 temp/*
+
 !temp/.gitkeep
 
 coverage/
+.env
